@@ -8,6 +8,8 @@ print(Ytest.shape)
 
 Xtrain = Xtrain.reshape(-1,28,28,1)
 Xtest = Xtest.reshape(-1,28,28,1)
+Xtrain = Xtrain / 255.0
+Xtest = Xtest / 255.0
 
 print("----- adding an greyscale channel -----")
 print(Xtrain.shape)
